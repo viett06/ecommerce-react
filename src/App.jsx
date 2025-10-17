@@ -1,9 +1,16 @@
-import "./App.css";
+// import "./App.css";
+import Footer from "@components/Footer/Footer.jsx";
+import Header from "@components/Header/Header.jsx";
+import MainLayout from "@components/Layout/Layout.jsx";
+import Button from "@components/button/Button";
 
 function App() {
   return (
     <>
-      <h1>hello word</h1>
+      <MainLayout>
+        <Header />
+        <Button />
+      </MainLayout>
     </>
   );
 }

@@ -9,7 +9,6 @@ function App() {
     <>
       <MainLayout>
         <Header />
-        <Button />
       </MainLayout>
     </>
   );

@@ -1,0 +1,44 @@
+@import "@styles/_mixins.module.scss";
+@import "@styles/_variables.module.scss";
+.containerHeader {
+  display: flex; // use flexbox for layout
+  align-items: center; // vertically center items
+  justify-content: space-around; // space items evenly with space round
+  background-color: bisque;
+  height: 83px;
+}
+.BoxIcon {
+  @include radius_common(50%);
+  @include flex_box_custom(center, center, 0px);
+  background-color: $primary;
+  width: 26px;
+  height: 26px;
+}
+.NoBoxIcon {
+  width: 26px;
+  height: 26px;
+}
+.containerBoxIcon {
+  @include flex_box_custom(center, center, 10px);
+}
+.containerBox {
+  @include flex_box_custom(center, center, 20px);
+}
+.containerMenu {
+  @include flex_box_custom(center, center, 20px);
+}
+.menu::after {
+  content: "";
+  display: block;
+  height: 3px;
+  opacity: 0;
+  background-color: $primary;
+  transform-origin: right;
+  transform: scale(0);
+  transition: transform 300ms, opacity 500ms;
+  margin-top: 6px;
+}
+.menu:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}

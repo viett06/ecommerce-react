@@ -1,10 +1,19 @@
 @import "@styles/_mixins.module.scss";
 @import "@styles/_variables.module.scss";
+.container {
+  @include flex_box_custom(center, center, 0px);
+  //background-color: bisque;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
 .containerHeader {
+  width: 1250px;
   display: flex; // use flexbox for layout
   align-items: center; // vertically center items
-  justify-content: space-around; // space items evenly with space round
-  background-color: bisque;
+  justify-content: space-between; // space items evenly with space round
+  //background-color: bisque;
   height: 83px;
 }
 .BoxIcon {
@@ -25,7 +34,13 @@
   @include flex_box_custom(center, center, 20px);
 }
 .containerMenu {
-  @include flex_box_custom(center, center, 20px);
+  @include flex_box_custom(center, center, 40px);
+}
+.menu {
+  padding-top: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: $primary;
 }
 .menu::after {
   content: "";

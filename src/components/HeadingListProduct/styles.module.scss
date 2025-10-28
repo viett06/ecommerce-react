@@ -1,0 +1,8 @@
+@import "@styles/_variables.module.scss";
+@import "@styles/_mixins.module.scss";
+.container {
+  @include flex_box-custom(space-between, center, 10px);
+}
+.containerItem {
+  @include flex_box-custom(center, center, 10px);
+}

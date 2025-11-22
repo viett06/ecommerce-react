@@ -5,7 +5,7 @@ import youtubeIcon from "@icons/svgs/youtube.svg";
 import cart from "@icons/svgs/cart.svg";
 import reload from "@icons/svgs/reload.svg";
 import heart from "@icons/svgs/heart.svg";
-function BoxIcon({ type, href, noStyle = false }) {
+function BoxIcon({ type, noStyle = false }) {
   const { BoxIcon, NoBoxIcon } = styles;
   const handleRenderIcon = (type) => {
     switch (type) {
